@@ -4,7 +4,79 @@ ScanGenie is your powerful barcode solution with a 1.14" LCD screen, rapid Barco
 
 This GitHub page offers a step-by-step tutorial for using ScanGenie. 
 
+### Interfacing Details
+- Display interfacing with ESP32
+    | ESP32 | Display | Function |
+    |---|---|---|
+    | IO12 | LCD_CLK | Clock pin of SPI interface for Display|
+    | IO11 | LCD_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+    | IO10 | LCD_CS | Chip Select pin of SPI interface|
+    | IO13 | LCD_DC| Data/Command (MISO) pin of SPI interface|
+    | IO14 | LCD_RST | Display Reset pin |
+    | IO5  | BL |Backlight of display|
 
+- ESP32 and DE2120 Scanner Module interfacing
+    | ESP32| DE2120 Scanner | Function |
+    |---|---|---|
+    |IO42 | SCLK |Clock pin of SPI interface for microSD card |
+    |IO2 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface|
+    |IO41 | DOUT | MISO (Master IN Slave OUT) data pin of SPI interface|
+    |IO1 | CS   | Chip Select pin of SPI interface|
+  
+- Buttons, Buzzer and LED Interfacing with ESP32
+    | ESP32 | Hardware | Function |
+    |---|---|---|
+    |IO4 | BOOT |Boot button |
+    |IO6 | RST |Reset button | 
+    |IO0 | SCAN | Scan Button |
+  
+  
+   
+
+### 1. Configure and Setup Development Environment
+   - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
+   - Once installation done will add ESP32 S3 board support into IDE, for this first you need to add below link into preference:
+     ``` https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json ```
+     
+     Select File > Preference, and add link as show in below image,
+      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/preference_board.gif" />
+      
+   - Now will install ESP32 based boards as shown in below image,
+
+     <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/install_ESP32boards.gif" />
+     
+   - Once done, keeping default settings select the ESP32S3 Dev Module with suitable com port (may be different in your case) as shown below, 
+
+     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/select_esp32_with_comport.gif">
+     
+     
+### 2. Installing Libraries
+   - Download [library zip file]() provided here in github.
+   - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
+
+     <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
+     
+### 3. Testing First Code
+   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes]() in github which you can download and try. 
+   - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on ESP32 of Scangenie.
+     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
+   - Checkout other examples below and build your own custom program codes using those references.
+
+### Example Codes
+   - [Example 1]() : Display demo code
+   - [Example 2]() : Button & Buzzer testing with display code
+   - and [Many more...]()
+
+   Now you are ready to try out your own codes, **_Happy Coding!_**
+   
+## Resources
+  * [Schematic](https://github.com/sbcshop/Scangenie_Hardware/blob/main/Design%20Data/Sch_Scangenie.pdf)
+  * [Hardware Files](https://github.com/sbcshop/Scangenie_Hardware)
+  * [Step File](https://github.com/sbcshop/Scangenie_Hardware/blob/main/Mechanical%20Data/ScanGenie.step)
+  * [Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+  * [ESP32 S3 Hardware Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/index.html)
+  * [ESP32 S3 Datasheet](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/documents/esp32-s3_datasheet_en.pdf)
+  * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
 
 ## Related Products
   * [Barcode HAT](https://shop.sb-components.co.uk/products/barcode-hat-for-raspberry-pi) 

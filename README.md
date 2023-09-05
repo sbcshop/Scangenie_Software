@@ -1,1 +1,1 @@
-# Scangenie_Software
+# ScanGenie_Software

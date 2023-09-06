@@ -13,22 +13,19 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
     | IO10 | LCD_CS | Chip Select pin of SPI interface|
     | IO13 | LCD_DC| Data/Command (MISO) pin of SPI interface|
     | IO14 | LCD_RST | Display Reset pin |
-    | IO5  | BL |Backlight of display|
+    | IO5  | BL | Backlight of display|
 
 - ESP32 and DE2120 Scanner Module interfacing
     | ESP32| DE2120 Scanner | Function |
     |---|---|---|
-    |IO42 | SCLK |Clock pin of SPI interface for microSD card |
-    |IO2 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface|
-    |IO41 | DOUT | MISO (Master IN Slave OUT) data pin of SPI interface|
-    |IO1 | CS   | Chip Select pin of SPI interface|
+    |IO17/U1TXD | B_RX | UART Communication Pin |
+    |IO18/U1RXD | B_TX | UART Communication Pin |
   
 - Buttons, Buzzer and LED Interfacing with ESP32
     | ESP32 | Hardware | Function |
     |---|---|---|
-    |IO4 | BOOT |Boot button |
-    |IO6 | RST |Reset button | 
-    |IO0 | SCAN | Scan Button |
+    |IO0 | BOOT |Boot button |
+    |IO7 | SCAN | Scan Button |
   
   
    
@@ -36,7 +33,10 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
    - Once installation done will add ESP32 S3 board support into IDE, for this first you need to add below link into preference:
-     ``` https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json ```
+     
+     ```
+     https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+     ```
      
      Select File > Preference, and add link as show in below image,
       <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/preference_board.gif" />

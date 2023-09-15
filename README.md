@@ -5,9 +5,37 @@
 ScanGenie is your powerful barcode solution with a 1.14" LCD screen, rapid Barcode/QR code scanner, versatile UART communication, Type-C USB port, and a buzzer. It simplifies complex barcode decoding, effortlessly connects to the cloud, and provides real-time feedback. Supporting 20 barcode symbologies, it's an open-source platform for developers and enthusiasts. Say goodbye to tough barcode challenges with ScanGenie's simplicity and versatility.
 
 This GitHub page offers a step-by-step tutorial for using ScanGenie. 
-### Features
 
-### Specification
+### Features : 
+- Powered with ESP32 makes it IoT enabled device to connect internet Cloud using WiFi and BLE for local wireless transmission
+- 1.14" TFT display for visual interaction
+- Read all mainstream 1D 2D barcodes in the market easily
+- Reads 20 Different Barcode Symbologies, CMOS camera
+- Two type C Support : 
+    - for direct Scanner access  
+    - for programming/power 
+- High brightness, dark environment scanning 
+- Support multiple systems and languages, secondary development.
+- Additional GPIO breakouts for interfacing other peripherals
+- Separate Scan button along with Reset and boot buttons for on the go scanning. 
+- Onboard buzzer provides audible alerts and notifications for enhanced user experience and system feedback.
+- Breadboard compatible for easy DIY breadboarding projects
+  
+### Specification : 
+- ESP32-S3 series of SoCs having Xtensa® dual-core 32-bit LX7 microprocessor, 2.4 GHz Wi-Fi (802.11 b/g/n) and Bluetooth® 5 (LE), Flash up to 16 MB, PSRAM up to 8 MB 
+- Board supply voltage:  5V
+- Operating voltage of pins: 3.3V
+- Display resolution 240 × 135 pixels
+- ST7789V2 Display Driver
+- Appearance: RGB, Colors: 65K
+- Reads 20 different symbologies:
+  - 1D Symbologies-> UPC-A, UPC-E, EAN-8, EAN-13, Code 128, GS1-128, Code 39, Code 93, Code 11, Interleaved 2-of-5, Matrix 2-of-5, Industrial 2-of-5, Codabar, MSI, GS1 DataBar, Datalogic 2-of-5
+  - 2D Symbologies->  QR Code,Data Matrix, PDF 417, Micro PDF 417,
+
+- Scanner Resolution: 640*480 
+- Communication Mode: USB(USB-KBW, USB-COM),TTL
+- Operating Temperature: -20℃ to 50℃
+- Storage Temperature: -40℃ to 70℃
 
 ### Pinouts
 
@@ -32,10 +60,11 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
     | ESP32 | Hardware | Function |
     |---|---|---|
     |IO0 | BOOT |Boot button |
-    |IO7 | B_SCAN | Scan Tigger Pin |
+    |IO7 | B_SCAN | Scan Trigger Pin |
 
-    If interested to automate scanning without pressing physical Scan Button then use B_Scan IO pin.
-    HIGH to activate scanning and LOW to stop.
+    If interested to automate scanning without pressing physical Scan Button then use B_SCAN pin. 
+    - Logic HIGH - trigger scanning
+    - Logic LOW - stop scanning
   
   
 

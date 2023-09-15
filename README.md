@@ -53,18 +53,14 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
 - ESP32 and DE2120 Scanner Module interfacing
     | ESP32| DE2120 Scanner | Function |
     |---|---|---|
-    |IO17/U1TXD | B_RX | UART Communication Pin |
-    |IO18/U1RXD | B_TX | UART Communication Pin |
+    |IO18 | B_RX | UART Communication Pin |
+    |IO17 | B_TX | UART Communication Pin |
   
 - Buttons and Trigger pin 
     | ESP32 | Hardware | Function |
     |---|---|---|
     |IO0 | BOOT |Boot button |
     |IO7 | B_SCAN | Scan Trigger Pin |
-
-    If interested to automate scanning without pressing physical Scan Button then use B_SCAN pin. 
-    - Logic HIGH - trigger scanning
-    - Logic LOW - stop scanning
   
   
 
@@ -101,12 +97,18 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
    - Checkout other examples below and build your own custom program codes using those references.
 
 ### Example Codes
-   - [Example 1]() : Display demo code
-   - [Example 2]() : Button & Buzzer testing with display code
+   - [Example 1]() : Display Demo code
+   - [Example 2]() : Scanning Barcode/QR Code using Scan Button
+   - [Example 3]() : Automatic Scanning Barcode/QR code after regular interval of Time
    - and [Many more...]()
 
    Now you are ready to try out your own codes, **_Happy Coding!_**
-   
+
+### Mode Setup
+- **TTL Mode**
+  
+- **USB-KBW Mode**
+
 ## Resources
   * [Schematic](https://github.com/sbcshop/Scangenie_Hardware/blob/main/Design%20Data/Sch_Scangenie.pdf)
   * [Hardware Files](https://github.com/sbcshop/Scangenie_Hardware)

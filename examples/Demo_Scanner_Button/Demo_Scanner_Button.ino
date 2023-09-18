@@ -39,7 +39,8 @@ void setup()
   
   if (scanner.begin(softSerial) == false)
   {
-    //Serial.println("Scanner did not respond. Please check wiring. Did you scan the POR232 barcode? Freezing...");
+    Serial.println("Scanner did not respond. Please check wiring. Did you scan the POR232 barcode? Freezing...");
+    Serial.println("Change mode to TTL: https://github.com/sbcshop/Scangenie_Software/blob/main/README.md#mode-setup")
     while (1);
   }
   

@@ -136,7 +136,7 @@ For testing any of Scanner code listed in this section your device needs to be i
     
     <img src="https://github.com/sbcshop/Zero-Barcode-Hat/raw/main/images/SC.PNG" width="539" height="311">
     
-  The DE2120 is completely user configurable, you can configure many settings according to your requirement by refering the DE2120 Manual(Barcode manual) provided in this Repo.  
+  The DE2120 is completely user configurable, you can configure many settings according to your requirement by refering the [DE2120 Setting Manual](https://github.com/sbcshop/Scangenie_Software/blob/main/documents/Setting_Manual-DE2120.pdf) provided in this Repo.  
   
 ## Resources
   * [Schematic](https://github.com/sbcshop/Scangenie_Hardware/blob/main/Design%20Data/Sch_Scangenie.pdf)
@@ -145,6 +145,8 @@ For testing any of Scanner code listed in this section your device needs to be i
   * [Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
   * [ESP32 S3 Hardware Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/index.html)
   * [ESP32 S3 Datasheet](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/documents/esp32-s3_datasheet_en.pdf)
+  * [DE2120 Datasheet](https://github.com/sbcshop/Scangenie_Software/blob/main/documents/DE2120_Datasheet.pdf)
+  * [DE2120 Setting Manual](https://github.com/sbcshop/Scangenie_Software/blob/main/documents/Setting_Manual-DE2120.pdf)
   * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
 
 ## Related Products

@@ -106,7 +106,9 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
 
 ### Mode Setup
 - **TTL Mode**
-  TTL mode is default mode in which DE2120 Scanner will work in co-ordination with ESP32 controller of ScanGenie using UART communication. If anyone how mode is different you can follow below steps to get device into TTL mode. 
+
+  TTL mode is default mode in which DE2120 Scanner will work in co-ordination with ESP32 controller of ScanGenie using UART communication. If in case your device mode is different you can follow below steps to get device into TTL mode. 
+
   - First step Scan the below barcode by Pressing onboard Scan button of ScanGenie. This will put device into TTL mode
     
     <img src="https://github.com/sbcshop/Pi-Barcode-HAT/raw/main/images/ttl_rs232.JPG">

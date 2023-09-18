@@ -85,22 +85,24 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
      
      
 ### 2. Installing Libraries
-   - Download [library zip file]() provided here in github.
+   - Download [library zip file](https://github.com/sbcshop/Scangenie_Software/blob/main/libraries.zip) provided here in github.
    - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
 
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
      
 ### 3. Testing First Code
-   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes]() in github which you can download and try. 
+   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes](https://github.com/sbcshop/Scangenie_Software/tree/main/examples) in github which you can download and try. 
    - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on ESP32 of Scangenie.
      <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
    - Checkout other examples below and build your own custom program codes using those references.
 
 ### Example Codes
-   - [Example 1]() : Display Demo code
-   - [Example 2]() : Scanning Barcode/QR Code using Scan Button
-   - [Example 3]() : Automatic Scanning Barcode/QR code after regular interval of Time
-   - and [Many more...]()
+
+For testing any of Scanner code listed in this section your device needs to be in TTL mode, if yes then proceed with example or else follow steps mentioned [here](https://github.com/sbcshop/Scangenie_Software/blob/main/README.md#mode-setup) in GitHub.
+
+   - [Example 1](https://github.com/sbcshop/Scangenie_Software/tree/main/examples/Demo_Display) : Display Demo code
+   - [Example 2](https://github.com/sbcshop/Scangenie_Software/tree/main/examples/Demo_Scanner_Button) : Scanning Barcode/QR Code using Scan Button
+   - [Example 3](https://github.com/sbcshop/Scangenie_Software/tree/main/examples/Demo_Scanner_automatic) : Automatic Scanning Barcode/QR code after regular interval of Time
 
    Now you are ready to try out your own codes, **_Happy Coding!_**
 

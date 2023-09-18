@@ -80,64 +80,52 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
     |IO7 | B_SCAN | Scan Trigger Pin |
   
 - GPIOs Breakout
-  Breakout 1
-  | ESP32 | Type* | Function |
-  |---|---|---|
-  |GP47 | I/O/T |  |
-  |GP21 | I/O/T |  |
-  |GP9  | |  |
-  |GP46 | |  |
-  |GP3  | |  |
-  |GP20 | |  |
-  |GP19 | |  |
-  |GP8  | |  |
-  |GP16 |  I/O/T | GPIO16, HS1_DATA4, U2RXD, EMAC_CLK_OUT |
-  |GP15 | |  |
-  |GND  | |  |
-  |GP6  | |  |
-  |GP4  | I/O/T |  |
-  |3V3  | P |  |
-  |EN   | I | Enable pin, HIGH - Chip on, LOW - Chip off |
-  |GND  | P | Ground |
-  |3V3  | P | Positive Supply, 3.3V |
-  |5V   | P | Positive Supply, 5V |
-
-  Breakout 2
-  |GP43 | I/O |  |
-  |GP44 | |  |
-  |GP48 | |  |
-  |GP45 | |  |
-  |GP35 | |  |
-  |GP36 | |  |
-  |GP37 | |  |
-  |GP38 | |  |
-  |GP39 | |  |
-  |GP40 | |  |
-  |GND  | P | Ground |
-  |GP41 | |  |
-  |GP42 | |  |
-  |GP2  | |  |
-  |GP1  | |  |
-  |GND  | P | Ground |
-  |3V3  | P | Positive Supply, 3.3V |
-  |5V   | P | Positive Supply, 5V |
-
-  |GP12 | I/O | GPIO12, ADC2_CH5, TOUCH5, RTC_GPIO15, MTDI, HSPIQ, HS2_DATA2, SD_DATA2, EMAC_TXD3 |
-  |GP2  | I/O | GPIO2, ADC2_CH2, TOUCH2, RTC_GPIO12, HSPIWP, HS2_DATA0, SD_DATA0 |
-  |GP36 | I | GPIO36, ADC1_CH0, RTC_GPIO0 |
-  |GP39 | I | GPIO39, ADC1_CH3, RTC_GPIO3 |
-  |GND  | P | Ground pin |
-  |3V3  | P | Positive Supply 3.3V |
   
-  Breakout 2
-  | ESP32 | Type* | Function |
+  <img src="">
+  
+  Breakout 1
+  | ESP32 | Type* | Multi-Function (_**Bold-Italic**_ default Function) |
   |---|---|---|
-  |GP16 |  I/O | GPIO16, HS1_DATA4, U2RXD, EMAC_CLK_OUT |
-  |GP17 |  I/O | GPIO17, HS1_DATA5, U2TXD, EMAC_CLK_OUT_180 |
-  |GP22 |  I/O |GPIO22, VSPIWP, U0RTS, EMAC_TXD1 |
-  |ET_INT | - | Ethernet Interrupt pin |
-  |GP21 | I/O | GPIO21, VSPIHD, EMAC_TX_EN |
-  |ET_RST | - | Ethernet Reset pin |  
+  |GP47 | I/O/T | SPICLK_P_DIFF, _**GPIO47**_ , SUBSPICLK_P_DIFF |
+  |GP21 | I/O/T | RTC_GPIO21, _**GPIO21**_ |
+  |GP9  | I/O/T | RTC_GPIO9, _**GPIO9**_ , TOUCH9, ADC1_CH8, FSPIHD, SUBSPIHD |
+  |GP46 | I/O/T | GPIO46 |
+  |GP3  | I/O/T | RTC_GPIO3, **_GPIO3_**, TOUCH3, ADC1_CH2  |
+  |GP20 | I/O/T | RTC_GPIO20, GPIO20, U1CTS, ADC2_CH9, CLK_OUT1, _**USB_D+**_ |
+  |GP19 | I/O/T | RTC_GPIO19, GPIO19, U1RTS, ADC2_CH8, CLK_OUT2, _**USB_D-**_ |
+  |GP8  | I/O/T | RTC_GPIO8, _**GPIO8**_ , TOUCH8, ADC1_CH7, SUBSPICS1  |
+  |GP16 | I/O/T | RTC_GPIO16, _**GPIO16**_ , U0CTS, ADC2_CH5, XTAL_32K_N |
+  |GP15 | I/O/T | RTC_GPIO15, _**GPIO15**_ , U0RTS, ADC2_CH4, XTAL_32K_P  |
+  |GND  | P     | Supply Ground  |
+  |GP6  | I/O/T | RTC_GPIO6, _**GPIO6**_ , TOUCH6, ADC1_CH5 |
+  |GP4  | I/O/T | RTC_GPIO4, _**GPIO4**_ , TOUCH4, ADC1_CH3  |
+  |3V3  | P     | Positive Supply, 3.3V |
+  |EN   | I     | Enable pin, HIGH - Chip on, LOW - Chip off |
+  |GND  | P     | Supply Ground |
+  |3V3  | P     | Positive Supply, 3.3V |
+  |5V   | P     | Positive Supply, 5V |
+
+  Breakout 2
+  | ESP32 | Type* | Multi-Function (_**Bold-Italic**_ default Function) |
+  |---|---|---|
+  |GP43/TXD0 | I/O/T | _**U0TXD**_ , GPIO43, CLK_OUT1 |
+  |GP44/RXD0 | I/O/T | _**U0RXD**_ , GPIO44, CLK_OUT2  |
+  |GP48 | I/O/T | SPICLK_N_DIFF, _**GPIO48**_ , SUBSPICLK_N_DIFF  |
+  |GP45 | I/O/T | _**GPIO45**_  |
+  |GP35 | I/O/T | SPIIO6, _**GPIO35**_ , FSPID, SUBSPID |
+  |GP36 | I/O/T | SPIIO7, _**GPIO36**_ , FSPICLK, SUBSPICLK |
+  |GP37 | I/O/T | SPIDQS, _**GPIO37**_ , FSPIQ, SUBSPIQ  |
+  |GP38 | I/O/T | _**GPIO38**_ , FSPIWP, SUBSPIWP  |
+  |GP39 | I/O/T | _**MTCK**_ , GPIO39, CLK_OUT3, SUBSPICS1 |
+  |GP40 | I/O/T | _**MTDO**_ , GPIO40, CLK_OUT2 |
+  |GND  | P | Ground |
+  |GP41 | I/O/T | _**MTDI**_ , GPIO41, CLK_OUT1 |
+  |GP42 | I/O/T | _**MTMS**_ , GPIO42  |
+  |GP2  | I/O/T | RTC_GPIO2, _**GPIO2**_, TOUCH2, ADC1_CH1  |
+  |GP1  | I/O/T | RTC_GPIO1, _**GPIO1**_, TOUCH1, ADC1_CH0  |
+  |GND  | P | Ground |
+  |3V3  | P | Positive Supply, 3.3V |
+  |5V   | P | Positive Supply, 5V |
 
   *I-INPUT, O-OUTPUT, P-POWER & T-HIGH IMPEDENCE
 

@@ -106,7 +106,16 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
 
 ### Mode Setup
 - **TTL Mode**
-  TTL mode is default mode in which DE2120 Scanner will work in co-ordination with ESP32 controller of ScanGenie using UART communication.
+  TTL mode is default mode in which DE2120 Scanner will work in co-ordination with ESP32 controller of ScanGenie using UART communication. If anyone how mode is different you can follow below steps to get device into TTL mode. 
+  - First step Scan the below barcode by Pressing onboard Scan button of ScanGenie. This will put device into TTL mode
+    
+    <img src="https://github.com/sbcshop/Pi-Barcode-HAT/raw/main/images/ttl_rs232.JPG">
+    
+  - Now to set Baud Rate 9600 by scanning below Barcode, even you can set different Baud Rate by refering Manual provided in this repo.
+    
+    <img src="https://github.com/sbcshop/Pi-Barcode-HAT/raw/main/images/baudrate.JPG">
+    
+  - **TTL mode is required** if you want **to try** various **code example** provided in this GitHub repo.
   
   
 - **USB-KBW Mode**
@@ -123,7 +132,7 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
     
     <img src="https://github.com/sbcshop/Zero-Barcode-Hat/raw/main/images/SC.PNG" width="539" height="311">
     
-    
+  The DE2120 is completely user configurable, you can configure many settings according to your requirement by refering the DE2120 Manual(Barcode manual) provided in this Repo.  
   
 ## Resources
   * [Schematic](https://github.com/sbcshop/Scangenie_Hardware/blob/main/Design%20Data/Sch_Scangenie.pdf)

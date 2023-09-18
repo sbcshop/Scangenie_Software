@@ -106,9 +106,25 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
 
 ### Mode Setup
 - **TTL Mode**
+  TTL mode is default mode in which DE2120 Scanner will work in co-ordination with ESP32 controller of ScanGenie using UART communication.
+  
   
 - **USB-KBW Mode**
 
+  You can also use this ScanGenie with USB cable for reading Barcode/Scanner without onboard ESP32 controller board.
+
+  - Connect type C cable to "Barcode" side instead of "PROG" and other end to your laptop/PC.
+
+  - Now simply scan the below Barcode and so this will set board into USB keyboard mode.
+    
+    <img src="https://github.com/sbcshop/Pi-Barcode-HAT/raw/main/images/img7.JPG">
+    
+  - In USB keyboard mode, you just need to open a notepad/word like application and scan any barcode or QR-code to get their number in your system. As shown in image below
+    
+    <img src="https://github.com/sbcshop/Zero-Barcode-Hat/raw/main/images/SC.PNG" width="539" height="311">
+    
+    
+  
 ## Resources
   * [Schematic](https://github.com/sbcshop/Scangenie_Hardware/blob/main/Design%20Data/Sch_Scangenie.pdf)
   * [Hardware Files](https://github.com/sbcshop/Scangenie_Hardware)

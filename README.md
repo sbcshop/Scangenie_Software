@@ -81,7 +81,7 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
   
 - GPIOs Breakout
   
-  <img src="https://github.com/sbcshop/Scangenie_Software/blob/main/images/ScanGenie_Breakout_pins.png">
+  <img src="https://github.com/sbcshop/Scangenie_Software/blob/main/images/ScanGenie_Breakout_pins.png" width="411" height="533">
   
   Breakout 1
   | ESP32 | Type* | Multi-Function (_**Bold-Italic**_ default Function) |

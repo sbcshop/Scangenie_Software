@@ -39,6 +39,23 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
 
 ### Pinouts
 
+<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/scangenipinout.jpg?v=1694781366">
+
+- (1) Barcode DE2120
+- (2) Scan Status LED
+- (3) Type C to Program
+- (4) 1.14” TFT Display
+- (5) ESP32 S3 Wroom - 1 
+- (6) Type C for direct Scanner Access
+- (7) Power Status LED
+- (8) Battery Charging Indicator
+- (9) Reset Button
+- (10) Boot Button
+- (11) & (13)  GPIOs Breakout
+- (12) Buzzer
+- (14) Scan Button
+- (15) Battery Connector
+  
 ### Interfacing Details
 - Display interfacing with ESP32
     | ESP32 | Display | Function |

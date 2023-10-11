@@ -43,10 +43,10 @@ This GitHub page offers a step-by-step tutorial for using ScanGenie.
 
 - (1) Barcode DE2120
 - (2) Scan Status LED
-- (3) Type C to Program
+- (3) Type C for direct Scanner Access
 - (4) 1.14” TFT Display
 - (5) ESP32 S3 Wroom - 1 
-- (6) Type C for direct Scanner Access
+- (6) Type C to Program
 - (7) Power Status LED
 - (8) Battery Charging Indicator
 - (9) Reset Button
